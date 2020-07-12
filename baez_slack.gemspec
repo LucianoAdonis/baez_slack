@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
     'https://rubygems.org/gems/core_slack'
   s.license = 'MIT'
   s.add_dependency 'async-websocket', '~> 0.8.0'
-  s.add_dependency 'colorize'
+  s.add_dependency 'colorize', '~> 0.8.1'
   s.add_dependency 'slack-ruby-client', '~> 0.14.5'
   s.add_development_dependency 'rspec', '~> 3.2'
 end

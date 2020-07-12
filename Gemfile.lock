@@ -3,7 +3,7 @@ PATH
   specs:
     baez_slack (0.0.8)
       async-websocket (~> 0.8.0)
-      colorize
+      colorize (~> 0.8.1)
       slack-ruby-client (~> 0.14.5)
 
 GEM
