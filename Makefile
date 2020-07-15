@@ -1,4 +1,4 @@
-VERSION_FILE := 0.0.8
+VERSION_FILE := 0.0.9
 
 deploy:
 	gem build baez_slack.gemspec

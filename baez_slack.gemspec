@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.name        = 'baez_slack'
-  s.version     = '0.0.8'
-  s.date        = '2020-07-10'
+  s.version     = '0.0.9'
+  s.date        = '2020-07-15'
   s.summary     = 'Core functions for any kind of interaction with Slack'
   s.description = 'The dream of enerbot'
   s.authors     = ['Luciano Adonis', 'Nicolas Noudia']
