@@ -35,7 +35,8 @@ module MessageSlack
                                  text: text,
                                  icon_url: @bot_icon,
                                  username: @bot_name,
-                                 thread_ts: @thread
+                                 thread_ts: @thread,
+                                 as_user: @bot_user
   rescue Slack::Web::Api::Errors::SlackError => e
     print e.message
     false
@@ -52,7 +53,8 @@ module MessageSlack
                                  attachments: attachment,
                                  icon_url: @bot_icon,
                                  username: @bot_name,
-                                 thread_ts: @thread
+                                 thread_ts: @thread,
+                                 as_user: @bot_user
   end
 
   def send_file(path, data, ts = nil)
@@ -62,6 +64,7 @@ module MessageSlack
                              icon_url: @bot_icon,
                              username: @bot_name,
                              thread_ts: @thread,
+                             as_user: @bot_user,
                              file: Faraday::UploadIO.new(file, 'text'),
                              title: File.basename(file),
                              filename: File.basename(file)
