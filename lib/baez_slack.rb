@@ -12,7 +12,7 @@ class BaezSlack < Credentials
   include RegexpSlack
   include SearchOnSlack
 
-  def initialize(name = '', image = '', token = nil)
+  def initialize(name: '', image: '', token: nil, as_user: false)
     set_credentials
 
     Slack.configure do |config|
@@ -22,6 +22,7 @@ class BaezSlack < Credentials
 
     @bot_name = name unless name.empty?
     @bot_icon = image unless image.empty?
+    @bot_user = as_user
 
     @time_client ||= Slack::RealTime::Client.new
     @web_client ||= Slack::Web::Client.new
