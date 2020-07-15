@@ -9,3 +9,5 @@ push:
 
 clean:
 	gem uninstall baez_slack
+
+test: clean deploy
